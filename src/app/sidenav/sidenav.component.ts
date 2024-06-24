@@ -1,8 +1,6 @@
 import { animate, keyframes, style, transition, trigger } from '@angular/animations';
 import { Component, Output, EventEmitter, OnInit, HostListener } from '@angular/core';
 import { navbarData } from './nav-data';
-import { RouterModule } from '@angular/router';
-import { CommonModule } from '@angular/common';
 
 interface SideNavToggle {
   screenWidth: number;
@@ -11,8 +9,6 @@ interface SideNavToggle {
 
 @Component({
   selector: 'app-sidenav',
-  standalone: true,
-  imports: [RouterModule, CommonModule],
   templateUrl: './sidenav.component.html',
   styleUrls: ['./sidenav.component.scss'],
   animations: [
